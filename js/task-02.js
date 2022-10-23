@@ -1,0 +1,21 @@
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomatos',
+  'Herbs',
+  'Condiments',
+];
+const ul = document.querySelector('ul')
+const arr = []
+for (let i = 0; i < ingredients.length; i += 1) {
+    
+  const ingredient = document.createElement('li');
+  ingredient.textContent = ingredients[i];
+  ingredient.classList.add('item')
+  console.log(ingredient);
+  arr.push(ingredient);
+}
+
+ul.append(...arr)
+console.log(ul)
