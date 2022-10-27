@@ -20,7 +20,9 @@ const markUp = images.map(({url,alt}) =>
  <img src=${url} alt=${alt} width ='300px'>
  </li>`)
   .join(" ")
-listRef.style.display = 'block';
+listRef.style.display = 'flex';
+listRef.style.flexWrap = 'wrap';
+listRef.style.justifyContent ='space-around'
 
   console.log(markUp)
 listRef.insertAdjacentHTML('beforeend', markUp)
