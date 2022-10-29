@@ -3,7 +3,7 @@ const outputName = document.querySelector("#name-output");
 
 const onInput = ({ currentTarget }) => {
     outputName.textContent = currentTarget.value;
-    if (inputName.textContent === '') {
+    if (!currentTarget.value) {
         outputName.textContent = 'Anonymous'
     }
 };
